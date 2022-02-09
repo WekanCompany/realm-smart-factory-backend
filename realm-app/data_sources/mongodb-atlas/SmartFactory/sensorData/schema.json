@@ -1,0 +1,42 @@
+{
+    "bsonType": "object",
+    "properties": {
+        "_id": {
+            "bsonType": "objectId"
+        },
+        "_partition": {
+            "bsonType": "string"
+        },
+        "acknowledged": {
+            "bsonType": "bool"
+        },
+        "acknowledgedBy": {
+            "bsonType": "string"
+        },
+        "code": {
+            "bsonType": "long"
+        },
+        "data": {
+            "bsonType": "binData"
+        },
+        "id": {
+            "bsonType": "string"
+        },
+        "notes": {
+            "bsonType": "string"
+        },
+        "ts": {
+            "bsonType": "date"
+        }
+    },
+    "required": [
+        "_id",
+        "_partition",
+        "code",
+        "data",
+        "id",
+        "acknowledged",
+        "ts"
+    ],
+    "title": "sensorData"
+}

@@ -1,0 +1,8 @@
+{
+    "app_id": "iiot-smart-factory-demo-nphrf",
+    "config_version": 20210101,
+    "name": "IIoT-Smart-Factory-Demo",
+    "location": "US-VA",
+    "deployment_model": "LOCAL",
+    "environment": "development"
+}
