@@ -13,12 +13,10 @@ const realmAppId = 'iiot-smart-factory-demo-nphrf';
 const realmAppUser = 'sanchanm@wekan.company';
 const realmAppPassword = 'PjYGbgFmgSNH2cV6';
 
-const frequency = 30000; // milliseconds
+const frequency = 15000; // milliseconds
 
 async function run() {
-  const image = fs.readFileSync('./images/1643551079.jpg');
-  const b64image = image.toString('base64');
-  const binImage = Buffer.from(b64image, 'base64');
+  const image = fs.readFileSync('./images/1643551080.jpg');
 
   const app = new Realm.App({ id: realmAppId });
 
@@ -48,7 +46,7 @@ async function run() {
         _partition: 'master',
         id: 'cam',
         code: alertLevel.NORMAL,
-        data: binImage,
+        data: image,
         acknowledged: false,
         ts: new Date(),
       };
